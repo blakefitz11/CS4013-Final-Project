@@ -18,6 +18,13 @@ public class QCACalculator {
         }
             return qca;
     }
+
+/**
+     * Takes the grade and returns their Qca equivalent
+     * @param grade
+     * @return
+     */
+    
     private static double gradeToNumeric(String grade){
         if (grade.equals("A1")){
             return 4.00;
