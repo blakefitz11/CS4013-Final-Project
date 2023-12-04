@@ -29,7 +29,7 @@ public class CSVReader implements AutoCloseable {
     }
 
     public static void main(String[] args) {
-        // Assuming you have CSV files named "programmes.csv", "students.csv", "faculty.csv"
+        // Assuming you have CSV files named "programmes.csv", "students.csv", "faculty.csv", "modules.csv"
         readModules("modules.csv");
         readProgrammes("programmes.csv");
         readStudents("students.csv");
