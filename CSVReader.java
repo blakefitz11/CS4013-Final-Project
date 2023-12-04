@@ -38,7 +38,7 @@ public class CSVReader implements AutoCloseable {
 
     public static void readModules(String filename) {
         try (CSVReader reader = new CSVReader(filename)) {
-            String[] headers = reader.readNext(); // Assuming the first line contains headers
+            String[] headers = reader.readNext(); 
             if (headers != null) {
                 String[] line;
                 while ((line = reader.readNext()) != null) {
