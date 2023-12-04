@@ -12,11 +12,10 @@ public class Transcript {
     }
 
     public void createTranscript() {
-        // Assuming you have a Student object to extract relevant information
         // Replace "student" with the actual reference to your Student object
-        Student student = getStudent(); // Implement the logic to retrieve the Student
+        Student student = getStudent(); 
 
-        // Header
+        // Header for the Transcript the student can see
         System.out.println("Name: " + student.getName() + " | ID: " + student.getId());
         System.out.println("Degree: " + student.getProgramme().getName());
         System.out.println("Semester: " + student.getCurrentSemester() +
@@ -26,7 +25,7 @@ public class Transcript {
         // Table header
         System.out.printf("%-8s%-30s%-4s%-3s\n", "CODE", "NAME", "CREDITS", "GRADE");
 
-        // Table data
+        // Student result data table
         for (Result result : results) {
             Module module = result.getModule();
             System.out.printf("%-8s%-30s%-4.2f%-3s\n", module.getCode(), module.getName(),
@@ -35,19 +34,14 @@ public class Transcript {
     }
 
     private double calculateOverallQCA() {
-        // Implement a way to calculate overall QCA based on all completed modules
-        // You may need to access the student's completed modules and results
-        // Replace "student" with the actual reference to your Student object
-        Student student = getStudent(); // Implement the logic to retrieve the Student
+        Student student = getStudent(); 
         ArrayList<Result> completedResults = student.getModulesResults();
 
         return QCACalculator.calculateQCA(completedResults);
     }
 
     private Student getStudent() {
-        // Implement a way to retrieve the Student
-        // This might involve searching a list or querying a database
-        // Return an actual Student object
+        // Retrieve the Student not done yet
         return null;
     }
 }
