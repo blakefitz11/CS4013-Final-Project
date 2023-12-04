@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-/**
- *
- */
+
 public class Module {
     private String name;
     private String code;
