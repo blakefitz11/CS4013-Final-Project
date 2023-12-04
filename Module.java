@@ -15,6 +15,11 @@ public class Module {
         this.enrolledStudents = new ArrayList<>();
     }
 
+/**
+     * This will add the enrolled Students 
+     * @param student
+     */
+    
     public void addEnrolledStudent(Student student){
         enrolledStudents.add(student);
     }
