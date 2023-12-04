@@ -7,6 +7,12 @@ public class Result {
         this.grade = grade;
 
     }
+
+/**
+     * Adds the grade from the module to the student
+     * @param student
+     */
+    
     public void addResultToStudent(Student student){
         this.module = getModule();
         this.grade = getGrade();
