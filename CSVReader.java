@@ -51,7 +51,7 @@ public class CSVReader implements AutoCloseable {
                 }
             }
         } catch (IOException | NumberFormatException e) {
-            e.printStackTrace(); // Handle exceptions appropriately in your application
+            e.printStackTrace(); 
         }
     }
 
@@ -118,25 +118,25 @@ public class CSVReader implements AutoCloseable {
     }
 
     private static Programme getProgramByName(String programName) {
-        // Implement logic to retrieve a Programme by name
+        // Implement code to retrieve a Programme by name
         // This might involve searching a list
         return null;
     }
 
     private static Department getDepartmentByName(String departmentName) {
-        // Implement logic to retrieve a Department by name
+        // Implement code to retrieve a Department by name
         // This might involve searching a list
         return null;
     }
 
     private static Module getModuleByName(String moduleName) {
-        // Implement logic to retrieve a Module by name
+        // Implement code to retrieve a Module by name
         // This might involve searching a list
         return null;
     }
 
     private static Student getStudentByName(String studentName) {
-        // Implement logic to retrieve a Student by name
+        // Implement code to retrieve a Student by name
         // This might involve searching a list
         return null;
     }
