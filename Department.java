@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
 /**
- * Need to return a csv of non-progressers
+ * 
  */
+//Need to return a csv of non-progressers
 public class Department {
     private String name;
     private ArrayList<Student> students;
